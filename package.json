@@ -1,0 +1,33 @@
+{
+  "name": "github-edge-function",
+  "version": "1.0.0",
+  "description": "Repository to learn edge functions on Netlify",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch ./src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node ./dist/app.js",
+    "netlify:dev": "netlify dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarloDiazPortilla/github-edge-function.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/CarloDiazPortilla/github-edge-function/issues"
+  },
+  "homepage": "https://github.com/CarloDiazPortilla/github-edge-function#readme",
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "rimraf": "^6.1.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@netlify/functions": "^5.1.2"
+  }
+}
